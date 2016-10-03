@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title> Missing chars </title>
+
+    <script src="js/angular.min.js" charset="utf-8"></script>
+    <script src="js/angular-resource.min.js" charset="utf-8"></script>
+    <script src="js/unique.js" charset="utf-8"></script>
+  </head>
+  <body data-ng-app="app" data-ng-controller="appCtrl as ctrl">
+    <button type="button" name="button" data-ng-click="ctrl.test()"> Show missing chars </button>
+
+    <ul>
+      <li data-ng-repeat="char in ctrl.missing">{{ char }}</li>
+    </ul>
+
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/appCtrl.js" charset="utf-8"></script>
+    <script src="js/appModel.js" charset="utf-8"></script>
+  </body>
+</html>
