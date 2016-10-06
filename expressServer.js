@@ -12,7 +12,6 @@ function getData(req, res) {
 
 app
   .use(express.static('client'))
-  .get('/:collection', getData)
-  .get('/:poems', getData);
+  .get('/:collection', getData);
 
 app.listen(8000);
